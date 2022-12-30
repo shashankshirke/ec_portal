@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "autoname": "MKTSLS.#######",
+ "creation": "2022-01-13 15:05:38.113872",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "date",
+  "column_break_3",
+  "day",
+  "column_break_5",
+  "client",
+  "section_break_7",
+  "marketplace_sales",
+  "section_break_9",
+  "total_orders",
+  "column_break_12",
+  "total_units",
+  "column_break_11",
+  "total_sales"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "NA",
+   "fieldname": "day",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Day",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "\nVenturini Footwear\nJakmans Clothing\nGreen Dragon\nKishco\nSaguna Baug\nArasan Clothing",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Sales Data"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_units",
+   "fieldtype": "Float",
+   "label": "Total Units Sold",
+   "precision": "0",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_sales",
+   "fieldtype": "Float",
+   "label": "Total Sales (\u20b9)",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "marketplace_sales",
+   "fieldtype": "Table",
+   "label": "Marketplace Sales",
+   "options": "Marketplace Sales Report Child",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_orders",
+   "fieldtype": "Float",
+   "label": "Tota Orders",
+   "precision": "0",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-13 15:40:15.584692",
+ "modified_by": "Administrator",
+ "module": "Clients",
+ "name": "Marketplace Sales Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "date",
+ "track_changes": 1
+}

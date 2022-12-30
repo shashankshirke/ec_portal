@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "autoname": "AMZCMP.#######",
+ "creation": "2022-01-13 13:19:38.812988",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "date",
+  "day",
+  "client",
+  "column_break_3",
+  "campaign_name",
+  "campaign_type",
+  "targeting_type",
+  "section_break_9",
+  "impressions",
+  "column_break_11",
+  "clicks",
+  "column_break_13",
+  "spend",
+  "column_break_15",
+  "orders",
+  "column_break_17",
+  "sales",
+  "section_break_15",
+  "ctr",
+  "cpc",
+  "column_break_23",
+  "cvr",
+  "cpo",
+  "column_break_27",
+  "acos",
+  "roas",
+  "section_break_28",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "NA",
+   "fieldname": "day",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Day",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "\nVenturini Footwear\nJakmans Clothing\nGreen Dragon\nKishco\nSaguna Baug\nArasan Clothing",
+   "reqd": 1
+  },
+  {
+   "fieldname": "campaign_name",
+   "fieldtype": "Data",
+   "label": "Campaign Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "campaign_type",
+   "fieldtype": "Select",
+   "label": "Campaign Type",
+   "options": "\nSponsored Products\nSponsored Brands\nSponsored Display"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Primary Metrics"
+  },
+  {
+   "fieldname": "impressions",
+   "fieldtype": "Float",
+   "label": "Impressions",
+   "precision": "0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clicks",
+   "fieldtype": "Float",
+   "label": "Clicks",
+   "precision": "0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "spend",
+   "fieldtype": "Float",
+   "label": "Spend (\u20b9)",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "orders",
+   "fieldtype": "Float",
+   "label": "Orders",
+   "precision": "0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales",
+   "fieldtype": "Float",
+   "label": "Sales (\u20b9)",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break",
+   "label": "Derived Metrics"
+  },
+  {
+   "default": "0",
+   "fieldname": "ctr",
+   "fieldtype": "Float",
+   "label": "Click-through Rate (CTR) %",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cpc",
+   "fieldtype": "Float",
+   "label": "Cost Per Click (CPC) \u20b9",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cvr",
+   "fieldtype": "Float",
+   "label": "Conversion Rate (CVR) %",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cpo",
+   "fieldtype": "Float",
+   "label": "Cost Per Order (CPO) \u20b9",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "acos",
+   "fieldtype": "Float",
+   "label": "Ad Cost of Sale (ACOS) %",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "roas",
+   "fieldtype": "Float",
+   "label": "Return on Ad Spend (ROAS) X",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "targeting_type",
+   "fieldtype": "Select",
+   "label": "Targeting Type",
+   "options": "\nAutomatic\nManual\nOther"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-13 14:33:44.192978",
+ "modified_by": "Administrator",
+ "module": "Clients",
+ "name": "Amazon Campaign Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "date",
+ "track_changes": 1
+}
