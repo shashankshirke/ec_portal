@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "autoname": "EC-FDB.#######",
+ "creation": "2022-01-03 12:47:46.936208",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "company",
+  "designation",
+  "column_break_1",
+  "feedback",
+  "professionalism_rating",
+  "communication_rating",
+  "reliability_rating",
+  "planning_execution_rating",
+  "scalability_rating",
+  "delivery_rating"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Feedback",
+   "reqd": 1
+  },
+  {
+   "fieldname": "professionalism_rating",
+   "fieldtype": "Rating",
+   "label": "Professionalism"
+  },
+  {
+   "fieldname": "communication_rating",
+   "fieldtype": "Rating",
+   "label": "Communication"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reliability_rating",
+   "fieldtype": "Rating",
+   "label": "Reliability"
+  },
+  {
+   "fieldname": "planning_execution_rating",
+   "fieldtype": "Rating",
+   "label": "Planning & Execution"
+  },
+  {
+   "fieldname": "scalability_rating",
+   "fieldtype": "Rating",
+   "label": "Team Scalability"
+  },
+  {
+   "fieldname": "delivery_rating",
+   "fieldtype": "Rating",
+   "label": "Delivery Timelines (TAT)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-03 21:51:56.553479",
+ "modified_by": "Administrator",
+ "module": "Other",
+ "name": "Client Feedback",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
