@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "creation": "2022-01-12 11:47:54.782137",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "location",
+  "position",
+  "from_date",
+  "to_date",
+  "column_break_6",
+  "ctc",
+  "supervisor",
+  "supervisor_contact",
+  "background_check_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location (City)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From (MMM-YYYY)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Data",
+   "label": "To (MMM-YYYY)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ctc",
+   "fieldtype": "Data",
+   "label": "CTC (\u20b9 LPA)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Data",
+   "label": "Supervisor Name"
+  },
+  {
+   "fieldname": "supervisor_contact",
+   "fieldtype": "Data",
+   "label": "Supervisor Contact"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "background_check_notes",
+   "fieldtype": "Small Text",
+   "label": "Background Check Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-01-12 12:25:10.288423",
+ "modified_by": "Administrator",
+ "module": "Human Resources",
+ "name": "Employee Employment History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

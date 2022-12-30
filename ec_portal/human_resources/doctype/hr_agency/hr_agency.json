@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "autoname": "HRAG.#######",
+ "creation": "2022-01-14 16:01:55.048710",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "full_name",
+  "designation",
+  "email",
+  "mobile",
+  "company",
+  "city",
+  "company_type",
+  "commission_details_section",
+  "commission_structure",
+  "commission_flat",
+  "commission_slab",
+  "terms_conditions"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email ID",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_type",
+   "fieldtype": "Select",
+   "label": "Company Type",
+   "options": "\nHR Agency\nJob Portal (Online)\nFreelancer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commission_details_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_structure",
+   "fieldtype": "Select",
+   "label": "Commission Structure",
+   "options": "\nFlat Fee (% of CTC)\nCTC wise slabs\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commission_flat",
+   "fieldtype": "Float",
+   "label": "Commission Rate (Flat %)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "commission_slab",
+   "fieldtype": "Small Text",
+   "label": "Commission Rate (Slab-wise)"
+  },
+  {
+   "fieldname": "terms_conditions",
+   "fieldtype": "Small Text",
+   "label": "Terms & Conditions"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "Location (City)",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-14 17:35:00.771935",
+ "modified_by": "Administrator",
+ "module": "Human Resources",
+ "name": "HR Agency",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "company",
+ "track_changes": 1
+}

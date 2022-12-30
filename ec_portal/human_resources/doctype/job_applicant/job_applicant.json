@@ -1,0 +1,346 @@
+{
+ "actions": [],
+ "autoname": "EC-JAP.#######",
+ "creation": "2021-12-04 20:42:51.710651",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "first_name",
+  "last_name",
+  "full_name",
+  "column_break_1",
+  "gender",
+  "marital_status",
+  "birthdate",
+  "section_break_2",
+  "email",
+  "mobile",
+  "linkedin",
+  "current_address",
+  "column_break_2",
+  "city",
+  "state",
+  "pincode",
+  "permanent_address",
+  "section_break_3",
+  "position",
+  "education",
+  "courses",
+  "experience",
+  "employment_status",
+  "column_break_3",
+  "current_salary",
+  "expected_salary",
+  "current_company",
+  "current_position",
+  "leaving_reason",
+  "section_break_4",
+  "work_mode",
+  "reference",
+  "device_check",
+  "internet_check",
+  "power_check",
+  "shift_check",
+  "column_break_4",
+  "applicant_notes",
+  "resume",
+  "photograph",
+  "section_break_5",
+  "interview_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "default": ".",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "length": 280,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale\nTransgender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birthdate",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "linkedin",
+   "fieldtype": "Data",
+   "label": "LinkedIn Profile",
+   "length": 280,
+   "options": "URL"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nAndaman Nicobar Islands\nAndhra Pradesh\nArunachal Pradesh\nAssam\nBihar\nChandigarh\nChhattisgarh\nDadra Nagar Haveli\nDaman and Diu\nDelhi\nGoa\nGujarat\nHaryana\nHimachal Pradesh\nJammu and Kashmir\nJharkhand\nKarnataka\nKerala\nLakshadweep\nMadhya Pradesh\nMaharashtra\nManipur\nMeghalaya\nMizoram\nNagaland\nOdisha\nPuducherry\nPunjab\nRajasthan\nSikkim\nTamil Nadu\nTelangana\nTripura\nUttar Pradesh\nUttarakhand\nWest Bengal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "PIN Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Professional Details"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Select",
+   "label": "Position Applying For",
+   "options": "\nContent Executive\nEcommerce Executive\nWordPress Developer\nMagento Developer\nFlutter Developer\nPython Developer\nJavaScript Developer\nPHP Developer\nDigital Ads Executive\nSocial Media Executive\nEcommerce Manager\nSocial Media Executive\nBusiness Development Executive\nHuman Resources Executive\nAccounts Executive\nGraphics Designer\nOperations Manager\nProject Manager\nProject Coordinator\nSoftware Tester\nBusiness Development Manager\nData Analyst",
+   "reqd": 1
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Select",
+   "label": "Educational Qualification",
+   "options": "\nSecondary School (SSC 10th)\nHigh Secondary (HSC 12th)\nDiploma\nBachelor of Arts (BA)\nBachelor of Commerce (B.Com)\nBachelor of Science (B.Sc)\nBachelor of Education (B.Ed)\nBachelor of Computer Applications (BCA)\nBachelor of Business Administration (BBA / BMS)\nBachelor of Law (LLB)\nBachelor of Engineering (BE / B.Tech)\nBachelor of Pharmacy (B.Pharm)\nMaster of Arts (MA)\nMaster of Commerce (M.Com)\nMaster of Science (M.Sc)\nMaster of Education (M.Ed)\nMaster of Computer Applications (MCA)\nMaster of Business Administration (MBA / MMS)\nMaster of Law (LLM)\nMaster of Engineering (ME / M.Tech)\nMaster of Pharmacy (M.Pharm)\nChartered Accountant (CA)\nCompany Secretary (CS)\nPost Graduate Diploma (PGD)\nPost Graduate Doctorate (Ph.D)\nMedical Degree\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "courses",
+   "fieldtype": "Data",
+   "label": "Professional Courses / Certifications"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Select",
+   "label": "Work Experience",
+   "options": "\nFresher\n1-2 years\n2-5 years\n5-10 years\n10-15 years\n15+ years",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employment_status",
+   "fieldtype": "Select",
+   "label": "Current Employment Status",
+   "options": "\nFresher\nEmployed Full-time\nEmployed Part-time\nFreelancing / Self-Employed\nSabbatical / Professional Break\nUnemployed\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_salary",
+   "fieldtype": "Float",
+   "label": "Current Salary (Annual)",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_salary",
+   "fieldtype": "Float",
+   "label": "Expected Salary (Annual)",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_company",
+   "fieldtype": "Data",
+   "label": "Current / Last Company Name"
+  },
+  {
+   "fieldname": "current_position",
+   "fieldtype": "Data",
+   "label": "Current / Last Position Held"
+  },
+  {
+   "fieldname": "leaving_reason",
+   "fieldtype": "Select",
+   "label": "Reason for leaving current job",
+   "length": 280,
+   "options": "\nLooking for career growth opportunities\nLooking for higher salary\nNot satisfied with company work culture\nLooking for a challenging work profile\nLooking to switch industries / sectors\nUnexpected Layoff (Covid / Cost-cutting, etc.)\nNot applicable\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "work_mode",
+   "fieldtype": "Select",
+   "label": "Preferred Work Mode",
+   "options": "\nOffice Location\nWork From Home",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Select",
+   "label": "Job Reference",
+   "options": "\nAasaan Jobs\nCampus Placement\nCareesma\nCutShort.io\nDirect Reference\nFacebook\nFirstNaukri.com\nGoogle\nHirist.com\nHR Recruitment Agency\nIndeed\nInternshala\nJob Fair / Event\nLinkedIn\nNaukri.com\nNIIT\nQuickr Jobs\nShort Jobs\nTraining Institute\nWhatsApp / SMS\nWork India\nOther",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "device_check",
+   "fieldtype": "Check",
+   "label": "I have my own laptop / PC"
+  },
+  {
+   "default": "0",
+   "fieldname": "internet_check",
+   "fieldtype": "Check",
+   "label": "I have a stable internet connection at home"
+  },
+  {
+   "default": "0",
+   "fieldname": "power_check",
+   "fieldtype": "Check",
+   "label": "I have a stable power connection at home"
+  },
+  {
+   "default": "0",
+   "fieldname": "shift_check",
+   "fieldtype": "Check",
+   "label": "I am open to work at US / UK shift timings"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Any additional information you may want to share with us about your career achievements, published works, links and references. ",
+   "fieldname": "applicant_notes",
+   "fieldtype": "Small Text",
+   "label": "Other Notes"
+  },
+  {
+   "fieldname": "resume",
+   "fieldtype": "Attach",
+   "label": "Upload Latest Resume",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photograph",
+   "fieldtype": "Attach Image",
+   "label": "Upload Latest Photograph",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Interview Details"
+  },
+  {
+   "fieldname": "interview_notes",
+   "fieldtype": "Text Editor",
+   "label": "Interview Notes"
+  }
+ ],
+ "image_field": "photograph",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-13 13:31:46.190988",
+ "modified_by": "Administrator",
+ "module": "Human Resources",
+ "name": "Job Applicant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "full_name",
+ "track_changes": 1
+}
